@@ -20,8 +20,10 @@ The Makefile has a target to build a .deb:
 
 ```
 $ make deb
-$ sudo dpkg -i flipd
+$ sudo dpkg -i flipd_0.1_all.deb
 ```
+
+The deb filename may differ.
 
 ## todo
 
