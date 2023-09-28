@@ -10,4 +10,4 @@ deb: build
 	mkdir -p bin
 	cp flipd bin/
 	dpkg-deb --root-owner-group --build .
-	mv ..deb flipd.deb
+	dpkg-name --overwrite ..deb
