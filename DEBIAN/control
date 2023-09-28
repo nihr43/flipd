@@ -1,0 +1,7 @@
+Package: flipd
+Version: 0.1
+Section: utils
+Priority: optional
+Architecture: all
+Maintainer: Nathan Hensel <nihr43@github.com>
+Description: flipd is the pure-l3 keepalived alternative
