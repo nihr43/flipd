@@ -14,6 +14,15 @@ flipd provides an imperfect (there will be tcp resets on failover) but simple so
 
 Keepalived et al. (VRRP, CARP) essentially rely on ARP for failover convergence.  If we wanted to use keepalived to provide failover for administrative kubernetes api access, we would have to to run all our k8s control plane nodes (kube-apiserver primarily) in the same broadcast domain; likely in one rack.  By using higher-level tools to achieve convergence (and then advertising the ips with something like FRR), we are able to forgo L2 limitations entirely and achieve availability-zone agnostic address reachability.
 
+## build and install
+
+The Makefile has a target to build a .deb:
+
+```
+$ make deb
+$ sudo dpkg -i flipd
+```
+
 ## todo
 
 - http watchdog
